@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="assets/css/order-page.css" />
+    <title>Order Page</title>
+  </head>
+  <body>
+    <header>
+      <!-- navbar bootstrap -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <img src="assets/logo/Tickitz .png" alt="" />
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link mx-3 ms-5" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-3" href="#">Payment</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link mx-3" href="#">Profile</a>
+              </li>
+            </ul>
+            <form class="d-flex" id="search-navbar">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Location</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <i class="bi bi-search"></i>
+              <button class="btn btn-sign-up-navbar" id="btn-sign-up-navbar" type="submit">Sign up</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- main -->
+    <main>
+      <div class="container">
+        <div class="row main__row pt-5 pb-5">
+          <div class="col-lg-8 main__user-selector p-0 pe-4">
+            <div class="main__movie-selected">
+              <header class="movie-selected__header">Movie Selected</header>
+              <div class="movie-selected__option mt-4">
+                <div class="movie-selected-name">Spider-Man:Homecoming</div>
+                <button class="btn-change-movie">Change movie</button>
+              </div>
+            </div>
+            <div class="main__seat-selector">
+              <header class="seat-selector__header">Choose Your Seat</header>
+              <div class="seat-selector mt-4">skip</div>
+              <div class="button-group pt-4">
+                <button class="seat__btn-change-movie">Change your movie</button>
+                <button class="seat__btn-change-chekout">Checkout now</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 main__user-info p-0">
+            <div class="main__order-info">
+              <header class="main-order__header">Order Info</header>
+              <div class="order-info mt-4">
+                <header class="order-info__header">
+                  <div class="teater-logo pt-4">
+                    <img src="assets/logo/cineone.png" alt="teater logo" />
+                  </div>
+                  <div class="teater-name pt-2">
+                    <span>CineOne21 Cinema</span>
+                  </div>
+                </header>
+                <div class="order-info__detail pt-3 px-3">
+                  <div class="order-info__movie-name d-flex justify-content-between pt-2">
+                    <div class="movie-property property">Movie Selected</div>
+                    <div class="movie-value value">Spider-Man:Homecoming</div>
+                  </div>
+                  <div class="order-info__movie-schedule d-flex justify-content-between pt-2">
+                    <div class="date-property property">Tuesday, 07 July 2021</div>
+                    <div class="time-property value">02.00pm</div>
+                  </div>
+                  <div class="order-info__movie-price d-flex justify-content-between pt-2">
+                    <div class="price-property property">One ticket price</div>
+                    <div class="price-value value">Rp. 40.000</div>
+                  </div>
+                  <div class="order-info__movie-seat d-flex justify-content-between pt-2">
+                    <div class="seat-property property">Seat choosed</div>
+                    <div class="seat-value value">C4, C5, C6</div>
+                  </div>
+                </div>
+                <div class="total-price d-flex justify-content-between px-3 pt-5 pb-4">
+                  <div class="total-price__property">Total Payment</div>
+                  <div class="total-price__value">Rp. 120.000</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- footer -->
+    <section class="footer">
+      <div class="footer__container">
+        <div class="footer__title foot">
+          <img src="assets/logo/Tickitz .png" alt="movieTix" class="footer__title-logo" />
+          <span class="foot-list">Stop waiting in line. Buy tickets conveniently, watch movies quietly.</span>
+        </div>
+        <div class="footer__explore foot">
+          <li class="footer__explore-list list-header foot-list">Explore</li>
+          <ul class="footer__explore-item">
+            <li class="footer__explore-list foot-list">Cinema</li>
+            <li class="footer__explore-list foot-list">Movies List</li>
+            <li class="footer__explore-list foot-list">My Ticket</li>
+            <li class="footer__explore-list foot-list">Notification</li>
+          </ul>
+        </div>
+        <div class="footer__sponsor foot">
+          <li class="footer__sponsor-list list-header foot-list">Our Sponsor</li>
+          <ul class="footer__sponsor-item">
+            <li class="footer__sponsor-list foot-list">
+              <img src="assets/logo/ebv.png" alt="ebv-id" />
+            </li>
+            <li class="footer__sponsor-list foot-list">
+              <img src="assets/logo/cineone.png" alt="ebv-id" />
+            </li>
+            <li class="footer__sponsor-list foot-list">
+              <img src="assets/logo/hiflix.png" alt="ebv-id" />
+            </li>
+          </ul>
+        </div>
+        <div class="footer__account foot">
+          <li class="footer__sponsor-list list-header foot-list">Follow us</li>
+          <ul class="footer__account-item">
+            <li class="footer__account-list foot-list">
+              <img src="assets/logo/footer-facebook.png" alt="facebook" class="footer-logo" />
+              <span>MovieTix Cinema id</span>
+            </li>
+            <li class="footer__account-list foot-list">
+              <img src="assets/logo/footer-instagram.png" alt="instagram" class="footer-logo" />
+              <span>movieTix.id</span>
+            </li>
+            <li class="footer__account-list foot-list">
+              <img src="assets/logo/footer-twitter.png" alt="twitter" class="footer-logo" />
+              <span>movieTix.id</span>
+            </li>
+            <li class="footer__account-list foot-list">
+              <img src="assets/logo/footer-youtube.png" alt="youtube" class="footer-logo" />
+              <span>MovieTix Cinema id</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer class="footer__copyright foot">
+      <div class="footer__container">
+        <span>&copy; 2021 MovieTix. All Rights Reserved</span>
+      </div>
+    </footer>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>

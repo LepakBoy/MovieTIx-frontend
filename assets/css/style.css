@@ -136,3 +136,70 @@ input {
 .btn-forgot__img {
   padding-right: 4px;
 }
+/* responsive */
+@media (max-width: 1199px) {
+  .sign-in__container {
+    width: 70%;
+  }
+  .title {
+    font-size: 32px;
+  }
+  .title__desc {
+    font-size: 16px;
+  }
+}
+@media (max-width: 916px) {
+  .banner {
+    flex: 3;
+  }
+  .banner__overlay--jumbotron {
+    width: 80%;
+  }
+  .banner__overlay--slogan {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 614px) {
+  .sign-in__container {
+    width: 80%;
+  }
+  .title__desc,
+  .sign-in__form--email,
+  .sign-in__form--password {
+    font-size: 14px;
+  }
+}
+@media (min-width: 521px) {
+  .sign-in__logo {
+    display: none;
+  }
+}
+@media (max-width: 521px) {
+  .banner,
+  .title__desc {
+    display: none;
+  }
+  .sign-in {
+    padding-top: 36px;
+    display: unset;
+  }
+
+  .title {
+    margin-top: 28px;
+    font-size: 28px;
+  }
+  .sign-in__form--email {
+    margin-top: 28px;
+  }
+  .button {
+    width: 64px;
+    margin: 0 14px;
+  }
+  .button-group {
+    justify-content: center;
+  }
+  .google,
+  .facebook {
+    display: none;
+  }
+}

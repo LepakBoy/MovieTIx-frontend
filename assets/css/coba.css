@@ -12,7 +12,7 @@
   display: flex;
   margin: 0 auto;
 }
-
+/* custom bnav */
 /* nav {
   height: 12vh;
   padding: 12px 0;
@@ -130,7 +130,7 @@
 }
 .jumbotron__img--img {
   height: 560px;
-  width: 490px;
+  width: 90%;
 }
 /* showing-list */
 .showing-list {
@@ -257,7 +257,7 @@
 /* subscribe  */
 .subscribe {
   width: 100%;
-  height: 700px;
+  /* height: 700px; */
   padding: 40px 0;
 }
 .subs-container {
@@ -265,7 +265,7 @@
 }
 .subs-content {
   padding: 72px;
-  padding: 22px;
+  padding: 40px;
   border: 2px solid #ffffff;
   border-radius: 8px;
   box-shadow: 0 16px 32px rgba(186, 186, 186, 0.3);
@@ -289,7 +289,7 @@
 }
 .input-email {
   width: 40%;
-  margin: 24px auto 0;
+  margin: 38px auto 0;
   display: flex;
   justify-content: space-between;
   font-size: 14px;
@@ -368,7 +368,6 @@
 .footer__sponsor-list {
   padding-bottom: 12px;
 }
-
 .footer__sponsor img {
   padding-bottom: 18px;
 }
@@ -392,53 +391,8 @@
   font-weight: 600;
   color: #4e4b66;
 }
-/* responsive */
-@media (max-width: 1140px) {
-  .input-email {
-    width: 70%;
-    justify-content: center;
-  }
-  .input-subs {
-    margin: 0 12px;
-  }
-}
-@media (max-width: 975px) {
-  #search-navbar {
-    width: 100% !important;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
-  #navbar-dropdown {
-    width: 100% !important;
-  }
-  .jumbotron__slogan h3 {
-    font-size: 18px;
-  }
-  .jumbotron__slogan h2 {
-    font-size: 44px;
-  }
-  .jumbotron__img--img {
-    width: 420px;
-    height: 480px;
-  }
-}
 /* responsive-footer */
 @media (max-width: 768px) {
-  .jumbotron {
-    height: unset;
-    padding-left: 0;
-    flex-direction: column;
-  }
-  .jumbotron__slogan {
-    padding-top: 64px;
-  }
-  .jumbotron__img {
-    justify-content: center;
-  }
-  .subscribe-desc {
-    width: 80%;
-  }
   .footer__container {
     display: block;
   }
@@ -470,47 +424,6 @@
     display: none;
   }
   .footer__copyright {
-    justify-content: start;
     text-align: left;
-  }
-  .footer__copyright {
-    justify-content: start;
-    text-align: left;
-  }
-  .footer__container {
-    margin: 0;
-  }
-}
-@media (max-width: 576px) {
-  .jumbotron__slogan h3 {
-    font-size: 14px;
-    font-weight: bolder;
-  }
-  .jumbotron__slogan h2 {
-    font-size: 38px;
-  }
-  .jumbotron__img--img {
-    width: 100%;
-  }
-  .input-email {
-    flex-direction: column;
-  }
-  .input-subs {
-    padding: 0;
-    margin: 0 0 22px;
-    width: 100%;
-  }
-  .btn-subscribe {
-    width: 100%;
-    height: 46px;
-  }
-  .subscibe__slogan {
-    font-size: 16px;
-  }
-  .subscibe__title {
-    font-size: 32px;
-  }
-  .subscribe-desc {
-    width: 100%;
   }
 }
