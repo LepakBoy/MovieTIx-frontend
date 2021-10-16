@@ -68,8 +68,21 @@ button {
   background-color: #ffffff !important;
   color: #5f2eea;
 }
+.navbar-toggler {
+  border: none !important;
+}
+.menu-toggler {
+  width: 36px;
+  height: 36px;
+}
+.search-mobile {
+  display: none;
+}
+.footer-nav-mobile {
+  display: none;
+}
 #search-navbar {
-  width: 32%;
+  width: 28%;
   justify-content: space-between;
   list-style: none;
   align-items: center;
@@ -295,6 +308,60 @@ main {
     padding-top: 28px !important;
   }
 }
+@media (max-width: 992px) {
+  .navbar-nav {
+    margin-top: 36px;
+  }
+  .search-mobile {
+    border-bottom: none !important;
+  }
+  #search-navbar {
+    width: 100%;
+    flex-direction: column;
+    text-align: start;
+    display: block !important;
+  }
+  .nav-item {
+    display: block;
+    margin: 0 16px !important;
+    text-align: center !important;
+    padding: 8px 0 !important;
+    border-bottom: 1px solid #dedede;
+  }
+  .nav-link {
+    margin: 0 !important;
+    padding: 8px 0 !important;
+  }
+  .nav-search {
+    padding: 8px 0 !important;
+  }
+  .bi-search {
+    display: none;
+  }
+  .user-photo {
+    display: none;
+  }
+  .movie-detail__title {
+    padding-top: 24px;
+    text-align: center;
+  }
+  .movie-detail__desc {
+    padding-left: 0 !important;
+  }
+  .casts,
+  .schedule {
+    width: 50%;
+  }
+  .footer-nav-mobile {
+    margin-top: 36px !important;
+    border-bottom: none !important;
+  }
+  .footer-nav-mobile a {
+    display: unset;
+    color: #6e7191;
+    font-size: 14px;
+  }
+}
 @media (max-width: 867px) {
   .list-header {
     padding-left: 16px;
@@ -348,5 +415,33 @@ main {
   }
   .footer__container {
     margin: 0;
+  }
+  .foot {
+    width: 80%;
+  }
+}
+@media (max-width: 576px) {
+  .main__movie-selected {
+    display: none;
+  }
+  .foot {
+    width: 100%;
+  }
+  .seat__btn-change-movie,
+  .seat__btn-change-chekout {
+    width: 48%;
+    /* height: 48px; */
+    font-size: 12px;
+  }
+}
+@media (max-width: 356px) {
+  .property,
+  .value {
+    font-size: 12px;
+  }
+  .total-price__property,
+  .total-price__value {
+    font-size: 16px;
+    font-weight: 600;
   }
 }

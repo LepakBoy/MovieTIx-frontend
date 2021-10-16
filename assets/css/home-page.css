@@ -72,8 +72,21 @@
   background-color: #ffffff !important;
   color: #5f2eea;
 }
+.navbar-toggler {
+  border: none !important;
+}
+.menu-toggler {
+  width: 36px;
+  height: 36px;
+}
+.search-mobile {
+  display: none;
+}
+.footer-nav-mobile {
+  display: none;
+}
 #search-navbar {
-  width: 32%;
+  width: 28%;
   justify-content: space-between;
   list-style: none;
   align-items: center;
@@ -129,8 +142,8 @@
   align-items: center;
 }
 .jumbotron__img--img {
-  height: 560px;
-  width: 490px;
+  height: 480px;
+  width: 440px;
 }
 /* showing-list */
 .showing-list {
@@ -402,6 +415,57 @@
     margin: 0 12px;
   }
 }
+@media (max-width: 992px) {
+  .navbar-nav {
+    margin-top: 36px;
+  }
+  .search-mobile {
+    border-bottom: none !important;
+  }
+  #search-navbar {
+    width: 100%;
+    flex-direction: column;
+    text-align: start;
+    display: block !important;
+  }
+  .nav-item {
+    display: block;
+    margin: 0 16px !important;
+    text-align: center !important;
+    padding: 8px 0 !important;
+    border-bottom: 1px solid #dedede;
+  }
+  .nav-link {
+    margin: 0 !important;
+    padding: 8px 0 !important;
+  }
+  .nav-search {
+    padding: 8px 0 !important;
+  }
+  .bi-search {
+    display: none;
+  }
+  .btn-sign-up-navbar {
+    display: none;
+  }
+  .movie-detail__title {
+    padding-top: 24px;
+    text-align: center;
+  }
+  .movie-detail__desc {
+    padding-left: 0 !important;
+  }
+
+  .footer-nav-mobile {
+    margin-top: 36px !important;
+    border-bottom: none !important;
+  }
+  .footer-nav-mobile a {
+    display: unset;
+    color: #6e7191;
+    font-size: 14px;
+  }
+}
 @media (max-width: 975px) {
   #search-navbar {
     width: 100% !important;
@@ -435,6 +499,30 @@
   }
   .jumbotron__img {
     justify-content: center;
+  }
+  .showing-list__movie--banner,
+  .upcoming-list__movie-card {
+    margin: 18px 0;
+    padding: 20px 12px;
+  }
+  .upcoming-list__movie-card {
+    width: 200px;
+  }
+  .movie-card__name {
+    height: 42px;
+  }
+
+  .movie-card__name {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .upcoming-list__movie-card img {
+    width: 100%;
+  }
+  .showing-list__movie--banner img {
+    width: 125px;
+    height: 200px;
   }
   .subscribe-desc {
     width: 80%;
@@ -480,6 +568,9 @@
   .footer__container {
     margin: 0;
   }
+  .foot {
+    width: 80%;
+  }
 }
 @media (max-width: 576px) {
   .jumbotron__slogan h3 {
@@ -490,7 +581,8 @@
     font-size: 38px;
   }
   .jumbotron__img--img {
-    width: 100%;
+    width: 280px;
+    height: 380px;
   }
   .input-email {
     flex-direction: column;
@@ -511,6 +603,9 @@
     font-size: 32px;
   }
   .subscribe-desc {
+    width: 100%;
+  }
+  .foot {
     width: 100%;
   }
 }

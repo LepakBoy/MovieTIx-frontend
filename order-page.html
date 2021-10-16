@@ -17,10 +17,13 @@
         <div class="container">
           <img src="assets/logo/Tickitz .png" alt="" />
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <img src="assets/logo/menu-toggler.png" class="menu-toggler" alt="menu" />
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item search-mobile mt-5">
+                <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search" />
+              </li>
               <li class="nav-item">
                 <a class="nav-link mx-3 ms-5" aria-current="page" href="#">Home</a>
               </li>
@@ -29,7 +32,7 @@
               </li>
 
               <li class="nav-item">
-                <a class="nav-link mx-3" href="#">Profile</a>
+                <a class="nav-link mx-3">Profile</a>
               </li>
             </ul>
             <form class="d-flex" id="search-navbar">
@@ -42,9 +45,12 @@
                   <li><a class="dropdown-item" href="#">Something else here</a></li>
                 </ul>
               </li>
-              <i class="bi bi-search"></i>
-              <button class="btn btn-sign-up-navbar" id="btn-sign-up-navbar" type="submit">Sign up</button>
+              <i class="bi bi-search nav-search nav-item"></i>
+              <img src="assets/image/photo.png" alt="photo" class="user-photo nav-search nav-item" />
             </form>
+            <li class="nav-item footer-nav-mobile">
+              <a class="nav-link mx-3" href="#">&copy; 2021 MovieTix. All Rights Reserved</a>
+            </li>
           </div>
         </div>
       </nav>
@@ -83,19 +89,19 @@
                   </div>
                 </header>
                 <div class="order-info__detail pt-3 px-3">
-                  <div class="order-info__movie-name d-flex justify-content-between pt-2">
+                  <div class="order-info__movie d-flex justify-content-between pt-2">
                     <div class="movie-property property">Movie Selected</div>
                     <div class="movie-value value">Spider-Man:Homecoming</div>
                   </div>
-                  <div class="order-info__movie-schedule d-flex justify-content-between pt-2">
+                  <div class="order-info__moviedule d-flex justify-content-between pt-2">
                     <div class="date-property property">Tuesday, 07 July 2021</div>
                     <div class="time-property value">02.00pm</div>
                   </div>
-                  <div class="order-info__movie-price d-flex justify-content-between pt-2">
+                  <div class="order-info__moviee d-flex justify-content-between pt-2">
                     <div class="price-property property">One ticket price</div>
                     <div class="price-value value">Rp. 40.000</div>
                   </div>
-                  <div class="order-info__movie-seat d-flex justify-content-between pt-2">
+                  <div class="order-info__movie d-flex justify-content-between pt-2">
                     <div class="seat-property property">Seat choosed</div>
                     <div class="seat-value value">C4, C5, C6</div>
                   </div>

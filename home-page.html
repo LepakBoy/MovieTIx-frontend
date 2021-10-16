@@ -18,12 +18,15 @@
         <div class="container">
           <img src="assets/logo/Tickitz .png" alt="" />
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <img src="assets/logo/menu-toggler.png" class="menu-toggler" alt="menu" />
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item search-mobile mt-5">
+                <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search" />
+              </li>
               <li class="nav-item">
-                <a class="nav-link mx-3" aria-current="page" href="#">Home</a>
+                <a class="nav-link mx-3 ms-5" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link mx-3" href="#">Payment</a>
@@ -35,7 +38,7 @@
             </ul>
             <form class="d-flex" id="search-navbar">
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Search </a>
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Location</a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li><a class="dropdown-item" href="#">Action</a></li>
                   <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -43,13 +46,18 @@
                   <li><a class="dropdown-item" href="#">Something else here</a></li>
                 </ul>
               </li>
-              <i class="bi bi-search"></i>
+              <i class="bi bi-search nav-search nav-item"></i>
               <button class="btn btn-sign-up-navbar" id="btn-sign-up-navbar" type="submit">Sign up</button>
             </form>
+            <li class="nav-item footer-nav-mobile">
+              <a class="nav-link mx-3" href="#">&copy; 2021 MovieTix. All Rights Reserved</a>
+            </li>
           </div>
         </div>
       </nav>
       <div class="container">
+        <!-- <button class="btn btn-sign-up-navbar" id="btn-sign-up-navbar" type="submit">Sign up</button> -->
+
         <!-- navbar -->
         <!-- <nav>
           <ul class="nav-link">
@@ -78,12 +86,12 @@
         </nav> -->
 
         <!-- jumbotron -->
-        <section class="jumbotron">
+        <section class="jumbotron pt-5">
           <div class="jumbotron__slogan col-md-6">
             <h3>Nearest Cinema, Newest Movie,</h3>
             <h2>Find out now!</h2>
           </div>
-          <div class="jumbotron__img col-md-6">
+          <div class="jumbotron__img col-md-6 align-items-center">
             <img src="assets/image/jumbotron-img.png" alt="jumbotron" class="jumbotron__img--img" />
           </div>
         </section>
@@ -173,7 +181,7 @@
           </div>
           <div class="upcoming-list__movie-card">
             <img src="assets/image/mv5.jpg" alt="movie 5" />
-            <div class="movie-card__name"><span>Spiderman Home Coming</span></div>
+            <div class="movie-card__name"><span>Spider-Man:Homecoming</span></div>
             <div class="movie-card__genre"><span>Action, Adventure, Sc-Fi</span></div>
             <button class="detail-btn">Detail</button>
           </div>
@@ -191,7 +199,7 @@
           </div>
           <div class="upcoming-list__movie-card">
             <img src="assets/image/mv5.jpg" alt="movie 5" />
-            <div class="movie-card__name"><span>Spiderman Home Coming</span></div>
+            <div class="movie-card__name"><span>Spider-Man:Homecoming</span></div>
             <div class="movie-card__genre"><span>Action, Adventure, Sc-Fi</span></div>
             <button class="detail-btn">Detail</button>
           </div>
