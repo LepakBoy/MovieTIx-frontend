@@ -69,6 +69,7 @@ button {
   color: #5f2eea;
 }
 .navbar-toggler {
+  padding: 0 !important;
   border: none !important;
 }
 .menu-toggler {

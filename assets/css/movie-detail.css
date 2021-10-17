@@ -75,6 +75,7 @@ button {
   align-items: center;
 }
 .navbar-toggler {
+  padding: 0 !important;
   border: none !important;
 }
 .menu-toggler {
