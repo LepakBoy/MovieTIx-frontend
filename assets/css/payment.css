@@ -275,17 +275,6 @@ main {
   .user-photo {
     display: none;
   }
-  .movie-detail__title {
-    padding-top: 24px;
-    text-align: center;
-  }
-  .movie-detail__desc {
-    padding-left: 0 !important;
-  }
-  .casts,
-  .schedule {
-    width: 50%;
-  }
 }
 @media (max-width: 867px) {
   .list-header {

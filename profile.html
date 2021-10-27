@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <link rel="stylesheet" href="assets/css/profile.css" />
+    <title>Profile</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row pt-3">
+        <div class="col-md-3">
+          <div class="profile-badges">
+            <div class="profile-banner__header d-flex justify-content-between p-4 px-4 mt-3">
+              <span>INFO</span>
+              <span><img src="./assets/logo/dot.png" alt="" /></span>
+            </div>
+            <div class="profile-img text-center pt-2">
+              <img src="./assets/image/photo profile.png" alt="photo" class="image-user" />
+            </div>
+            <div class="profile-name text-center py-3">
+              <span>Jonos El Rodriguez</span>
+            </div>
+            <div class="profile-title text-center pb-5">
+              <span>Moviegoers</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-9">
+          <div class="profile-account-settings ps-1">
+            <div class="wrapper p-3 px-4 py-4 mt-3">
+              <div class="header border-bottom pb-4">
+                <span class="me-5 profile-menu">Account Setting</span>
+                <span class="order-settings profile-menu">Order History</span>
+              </div>
+              <div class="acount-settings__detail mt-5">
+                <div class="detail-header border-bottom pb-4">Details Information</div>
+              </div>
+              <div class="account-user-name pt-4 mt-3">
+                <div class="row">
+                  <div class="col-md-6 username">
+                    <span class="first-name-header d-block"> First Name </span>
+                    <input class="account-settings-input py-2 ps-4 mt-2" type="text" value="First Name" />
+                  </div>
+                  <div class="col-md-6 username">
+                    <span class="last-name-header d-block"> Last Name </span>
+                    <input class="account-settings-input py-2 ps-4 mt-2" type="text" value="Last Name" />
+                  </div>
+                  <div class="col-md-6 contact mt-4">
+                    <span class="email-header d-block mt-2"> E-mail </span>
+                    <input class="account-settings-input py-2 ps-4 mt-3" type="text" value="E-mail" />
+                  </div>
+                  <div class="col-md-6 contact mt-4">
+                    <span class="phone-header d-block mt-2"> Phone Number </span>
+                    <input class="account-settings-input py-2 ps-4 mt-3" type="text" value="Phone Number" />
+                  </div>
+                  <div class="button-update col-md-6 mt-5 pt-2">
+                    <button class="button-update-account-detail w-100">Update Changes</button>
+                  </div>
+                </div>
+              </div>
+              <div class="acount-settings__detail mt-5">
+                <div class="detail-header border-bottom pb-4">Account and Privacy</div>
+              </div>
+              <div class="account-user-name pt-4 mt-3">
+                <div class="row">
+                  <div class="col-md-6 username">
+                    <span class="first-name-header d-block"> New Password </span>
+                    <input class="account-privacy-input py-2 ps-4 mt-2 w-100" type="text" value="Write your password" />
+                  </div>
+                  <div class="col-md-6 username">
+                    <span class="last-name-header d-block"> Confirm Password </span>
+                    <input class="account-privacy-input py-2 ps-4 mt-2 w-100" type="text" value="Confirm Your Password" />
+                  </div>
+                  <div class="button-update col-md-6 mt-5 pt-2 pb-3">
+                    <button class="button-update-account-detail w-100">Update Changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ORDER HISTORY -->
+          <div class="profile-order-history ps-1">
+            <div class="wrapper p-3 px-4 py-4 mt-3">
+              <div class="header border-bottom pb-4">
+                <span class="me-5 profile-menu">Account Setting</span>
+                <span class="order-settings profile-menu">Order History</span>
+              </div>
+              <div class="order-list">
+                <!-- mapping from here -->
+                <div class="order-list-item mt-5 p-4">
+                  <div class="detail-order d-flex justify-content-between border-bottom">
+                    <div class="detail-order-history">
+                      <div class="date-order pt-3">Tuesday, 07 January 2020 - 04:30pm</div>
+                      <div class="movie-name-order pt-2 pb-4">Spider-Man:Homecoming</div>
+                    </div>
+                    <div class="teater-logo d-flex align-items-center"><img src="./assets/logo/cineone.png" alt="" /></div>
+                  </div>
+                  <div class="detail-ticket d-flex justify-content-between pt-3">
+                    <button class="ticket-status">Ticket in active</button>
+                    <button class="show-ticket">Show Details</button>
+                  </div>
+                </div>
+                <!-- item 2 -->
+                <div class="order-list-item mt-5 p-4">
+                  <div class="detail-order d-flex justify-content-between border-bottom">
+                    <div class="detail-order-history">
+                      <div class="date-order pt-3">Tuesday, 07 January 2020 - 04:30pm</div>
+                      <div class="movie-name-order pt-2 pb-4">Spider-Man:Homecoming</div>
+                    </div>
+                    <div class="teater-logo d-flex align-items-center"><img src="./assets/logo/cineone.png" alt="" /></div>
+                  </div>
+                  <div class="detail-ticket d-flex justify-content-between pt-3">
+                    <button class="ticket-status">Ticket in active</button>
+                    <button class="show-ticket">Show Details</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+</html>

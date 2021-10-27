@@ -171,7 +171,7 @@
 }
 .showing-list__movie {
   width: 100%;
-  min-height: 200px;
+  /* min-height: 200px; */
   white-space: nowrap;
   overflow-x: scroll !important;
   overflow-y: visible !important;
@@ -207,7 +207,7 @@
   margin-top: 18px;
   font-size: 16px;
   font-weight: 700;
-  /* white-space: initial; */
+  white-space: initial;
 }
 .showing__detail-genre {
   font-size: 12px;
