@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <link rel="stylesheet" href="assets/css/manage-movie.css" />
+    <title>Manage Movie</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row pt-3">
+        <div class="form-movie col-md-12">
+          <div class="form-movie__header">Form Movie</div>
+          <div class="wrapper p-4 pt-5 mt-4">
+            <div class="form-movie__data row">
+              <div class="col-md-3">
+                <div class="movie-banner p-3 d-flex justify-content-center align-items-center">
+                  <img src="./assets/image/mv5.jpg" alt="" />
+                </div>
+              </div>
+              <div class="col-md-9 row pe-0">
+                <div class="col-md-6 left-side">
+                  <div class="movie-name">
+                    <div class="label my-2">Movie Name</div>
+                    <input type="text" class="manage-movie-input ps-3 mb-3 w-100" name="" id="" value="Spider-Man:Homecoming" />
+                  </div>
+                  <div class="movie-director">
+                    <div class="label my-2">Director</div>
+                    <input type="text" class="manage-movie-input ps-3 mb-3 w-100" name="" id="" value="Jon Watts" />
+                  </div>
+                  <div class="movie-release">
+                    <div class="label my-2">Release Date</div>
+                    <input type="text" class="manage-movie-input ps-3 mb-3 w-100" name="" id="" value="07/05/2020" />
+                  </div>
+                </div>
+                <div class="col-md-6 right-side pe-0">
+                  <div class="movie-category">
+                    <div class="label my-2">Category</div>
+                    <input type="text" class="manage-movie-input ps-3 mb-3 w-100" name="" id="" value="Action, Adventure" />
+                  </div>
+                  <div class="movie-cast">
+                    <div class="label my-2">Cast</div>
+                    <input type="text" class="manage-movie-input ps-3 mb-3 w-100" name="" id="" value="Tom Holland, Michael Keaton, Robert Dow.." />
+                  </div>
+                  <div class="movie-duration row">
+                    <div class="col-6 hour">
+                      <div class="label my-2">Duration Hour</div>
+                      <input type="text" class="manage-movie-input ps-3 mb-3 w-100" name="" id="" value="2" />
+                    </div>
+                    <div class="col-6 minute">
+                      <div class="label my-2">Duration Minutes</div>
+                      <input type="text" class="manage-movie-input ps-3 mb-3 w-100" name="" id="" value="13" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="synopsis">
+                <div class="label my-2">Synopsis</div>
+                <textarea name="" id="" cols="100" class="ps-3" rows="4">
+Thrilled by his experience with the Avengers, Peter returns home, where he
+lives with his Aunt May, | </textarea
+                >
+              </div>
+              <div class="button-group row pe-0 py-3 my-2">
+                <div class="col-md-12 justify-content-end d-flex pe-0">
+                  <button class="movie-manage-button button-reset me-5">Reset</button>
+                  <button class="movie-manage-button button-submit" type="submit">Submit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4 pt-4">
+        <div class="data-movie__header col-md-6">Data Movie</div>
+        <div class="d-flex sort-option justify-content-end col-md-6">
+          <div class="dropdown sort me-4">
+            <button class="btn btn-secondary dropdown-toggle sort-button px-5" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Sort</button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+          <input type="text" placeholder="Search movie name ..." class="movie-name-search text-center" />
+        </div>
+        <div class="wrapper p-4 pt-5 mt-4 d-flex flex-wrap justify-content-center">
+          <!-- mapping from here -->
+          <div class="movie-list-col py-5 px-1 text-center">
+            <div class="movie-card mx-auto p-4">
+              <img src="./assets/image/mv5.jpg" alt="" class="movie-card-banner w-100" />
+              <div class="movie-card-name pt-2"><span>Spider-man:Homecoming</span></div>
+              <div class="movie-card-category"><span>Action, Adventure</span></div>
+              <div class="button-group-card">
+                <button class="btn-update btn-card d-block mx-auto w-100 my-3 py-1">Update</button>
+                <button class="btn-delete btn-card d-block mx-auto w-100 mt-3 mb-2 py-1">Delete</button>
+              </div>
+            </div>
+          </div>
+          <div class="movie-list-col py-5 px-1 text-center">
+            <div class="movie-card mx-auto p-4">
+              <img src="./assets/image/mv5.jpg" alt="" class="movie-card-banner w-100" />
+              <div class="movie-card-name pt-2"><span>Spider-man:Homecoming</span></div>
+              <div class="movie-card-category"><span>Action, Adventure</span></div>
+              <div class="button-group-card">
+                <button class="btn-update btn-card d-block mx-auto w-100 my-3 py-1">Update</button>
+                <button class="btn-delete btn-card d-block mx-auto w-100 mt-3 mb-2 py-1">Delete</button>
+              </div>
+            </div>
+          </div>
+          <div class="movie-list-col py-5 px-1 text-center">
+            <div class="movie-card mx-auto p-4">
+              <img src="./assets/image/mv5.jpg" alt="" class="movie-card-banner w-100" />
+              <div class="movie-card-name pt-2"><span>Spider-man:Homecoming</span></div>
+              <div class="movie-card-category"><span>Action, Adventure</span></div>
+              <div class="button-group-card">
+                <button class="btn-update btn-card d-block mx-auto w-100 my-3 py-1">Update</button>
+                <button class="btn-delete btn-card d-block mx-auto w-100 mt-3 mb-2 py-1">Delete</button>
+              </div>
+            </div>
+          </div>
+          <div class="movie-list-col py-5 px-1 text-center">
+            <div class="movie-card mx-auto p-4">
+              <img src="./assets/image/mv5.jpg" alt="" class="movie-card-banner w-100" />
+              <div class="movie-card-name pt-2"><span>Spider-man:Homecoming</span></div>
+              <div class="movie-card-category"><span>Action, Adventure</span></div>
+              <div class="button-group-card">
+                <button class="btn-update btn-card d-block mx-auto w-100 my-3 py-1">Update</button>
+                <button class="btn-delete btn-card d-block mx-auto w-100 mt-3 mb-2 py-1">Delete</button>
+              </div>
+            </div>
+          </div>
+          <div class="movie-list-col py-5 px-1 text-center">
+            <div class="movie-card mx-auto p-4">
+              <img src="./assets/image/mv5.jpg" alt="" class="movie-card-banner w-100" />
+              <div class="movie-card-name pt-2"><span>Spider-man:Homecoming</span></div>
+              <div class="movie-card-category"><span>Action, Adventure</span></div>
+              <div class="button-group-card">
+                <button class="btn-update btn-card d-block mx-auto w-100 my-3 py-1">Update</button>
+                <button class="btn-delete btn-card d-block mx-auto w-100 mt-3 mb-2 py-1">Delete</button>
+              </div>
+            </div>
+          </div>
+          <div class="movie-list-col py-5 px-1 text-center">
+            <div class="movie-card mx-auto p-4">
+              <img src="./assets/image/mv5.jpg" alt="" class="movie-card-banner w-100" />
+              <div class="movie-card-name pt-2"><span>Spider-man:Homecoming</span></div>
+              <div class="movie-card-category"><span>Action, Adventure</span></div>
+              <div class="button-group-card">
+                <button class="btn-update btn-card d-block mx-auto w-100 my-3 py-1">Update</button>
+                <button class="btn-delete btn-card d-block mx-auto w-100 mt-3 mb-2 py-1">Delete</button>
+              </div>
+            </div>
+          </div>
+          <div class="movie-list-col py-5 px-1 text-center">
+            <div class="movie-card mx-auto p-4">
+              <img src="./assets/image/mv5.jpg" alt="" class="movie-card-banner w-100" />
+              <div class="movie-card-name pt-2"><span>Spider-man:Homecoming</span></div>
+              <div class="movie-card-category"><span>Action, Adventure</span></div>
+              <div class="button-group-card">
+                <button class="btn-update btn-card d-block mx-auto w-100 my-3 py-1">Update</button>
+                <button class="btn-delete btn-card d-block mx-auto w-100 mt-3 mb-2 py-1">Delete</button>
+              </div>
+            </div>
+          </div>
+          <div class="movie-list-col py-5 px-1 text-center">
+            <div class="movie-card mx-auto p-4">
+              <img src="./assets/image/mv5.jpg" alt="" class="movie-card-banner w-100" />
+              <div class="movie-card-name pt-2"><span>Spider-man:Homecoming</span></div>
+              <div class="movie-card-category"><span>Action, Adventure</span></div>
+              <div class="button-group-card">
+                <button class="btn-update btn-card d-block mx-auto w-100 my-3 py-1">Update</button>
+                <button class="btn-delete btn-card d-block mx-auto w-100 mt-3 mb-2 py-1">Delete</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
