@@ -91,16 +91,37 @@ textarea {
   background-color: white;
   color: #5f2eea;
 }
+.btn-update:hover {
+  background-color: #5f2eea;
+  color: white;
+}
 .btn-delete {
   border: 1px solid #ed2e7e;
   border-radius: 4px;
   background-color: white;
   color: #ed2e7e;
 }
+.btn-delete:hover {
+  background-color: #ed2e7e;
+  color: white;
+}
 
 /* responsive */
 @media (max-width: 1400px) {
   .movie-card-col {
     /* width: 25%; */
+  }
+}
+
+@media (max-width: 426px) {
+  .sort-option {
+    flex-direction: column;
+  }
+  .sort {
+    width: 100%;
+    margin-top: 24px;
+  }
+  .dropdown-toggle {
+    width: 100%;
   }
 }
